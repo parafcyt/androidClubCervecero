@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardCornerRadius="6dp"
+    android:layout_marginBottom="30sp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imagen"
+            android:background="@drawable/sietecolinas"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="12dp"
+            android:background="@color/colorTransparente">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:id="@+id/nombreCerveceria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7 COLINAS"
+                    android:textColor="@color/colorTextoBlanco"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tiempo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hace 4 horas"
+                    android:textColor="@color/colorTextoBlanco"
+                    android:textSize="15sp"
+                    android:layout_gravity="right"
+                    />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/promocion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Happy Hour 21 a 23 hs."
+                android:textColor="@color/colorTextoBlanco"
+                android:textSize="20sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_favorito_selector"
+                    android:layout_marginRight="8dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_share"
+                    android:layout_marginRight="8dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_place"
+                    android:layout_marginRight="8dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cantidadLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 me gusta"
+                android:textSize="12sp"
+                android:textColor="@color/colorTextoBlanco">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

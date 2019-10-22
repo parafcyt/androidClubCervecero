@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_casita"
+        icon="@drawable/ic_casita"
+        title="@string/tab_casita"
+        barColorWhenSelected="@color/colorTextoBlanco"/>
+    <tab
+        id="@+id/tab_buscar"
+        icon="@drawable/ic_buscar"
+        title="@string/tab_buscar"
+        barColorWhenSelected="@color/colorTextoBlanco"/>
+
+    <tab
+        id="@+id/tab_perfil"
+        icon="@drawable/ic_perfil"
+        title="@string/tab_perfil"
+        barColorWhenSelected="@color/colorTextoBlanco"/>
+
+</tabs>

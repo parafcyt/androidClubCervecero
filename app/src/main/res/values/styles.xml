@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorControlNormal">@color/colorTextoBlanco</item>
+        <item name="colorControlActivated">@color/colorTextoBlanco</item>
+        <item name="colorButtonNormal">@color/colorBotonIniciar</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorTextoBlanco</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="Theme.AppCompat.Light">
+
+    </style>
+
+    <style name="AppCrearCuenta" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorControlNormal">@color/colorNegro</item>
+        <item name="colorControlActivated">@color/colorNegro</item>
+        <item name="colorButtonNormal">@color/colorBotonIniciar</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toolbar_crearcuenta">Create an account</string>
+
+    <string name="app_name">clubcerveceromona</string>
+    <string name="login_usuario">User</string>
+    <string name="login_contrasenia">Password</string>
+    <string name="login_iniciar">Login</string>
+
+
+    <string name="crear_correo">E-mail</string>
+    <string name="crear_nombre">Name</string>
+    <string name="crear_usuario">User</string>
+    <string name="crear_contrasenia">Password</string>
+    <string name="crear_confircontrasenia">Confirm Password</string>
+
+    <string name="notienecuenta">Dont have an account?</string>
+    <string name="linkeablecuenta">Create an account here</string>
+
+    <string name="toastMensajeLogon">Log on</string>
+
+</resources>

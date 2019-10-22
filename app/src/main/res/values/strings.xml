@@ -1,0 +1,28 @@
+<resources>
+    <string name="toolbar_crearcuenta">Crear Cuenta</string>
+
+    <string name="app_name">clubcerveceromona</string>
+    <string name="login_usuario">Usuario</string>
+    <string name="login_contrasenia">Contraseña</string>
+    <string name="login_iniciar">Iniciar Sesión</string>
+
+
+    <string name="crear_correo">Correo</string>
+    <string name="crear_nombre">Nombre</string>
+    <string name="crear_usuario">Usuario</string>
+    <string name="crear_contrasenia">Contraseña</string>
+    <string name="crear_confircontrasenia">Confirmar Contraseña</string>
+    <string name="notienecuenta">¿No tienes una cuenta?</string>
+    <string name="linkeablecuenta">Crea una aquí</string>
+
+    <string name="toastMensajeLogon">Ingresando</string>
+
+    <string name="tab_casita">Inicio</string>
+    <string name="tab_buscar">Buscar</string>
+    <string name="tab_perfil">Perfil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

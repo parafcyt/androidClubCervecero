@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "447370570379",
+    "firebase_url": "https://cervecero-b91e8.firebaseio.com",
+    "project_id": "cervecero-b91e8",
+    "storage_bucket": "cervecero-b91e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447370570379:android:1e47456ff8052c0f2b828e",
+        "android_client_info": {
+          "package_name": "com.example.clubcerveceromona"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447370570379-hppnoofvh00gg9gptf1mcoiio8bvbvs4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.clubcerveceromona",
+            "certificate_hash": "dba5a03417a6e6b6de047a920d74065e08bd3cb0"
+          }
+        },
+        {
+          "client_id": "447370570379-ql2jq43kjnra7j9vbuhvjfmu3k0pukqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTlgFWxqovagASliE25LXfirLrWq_8SzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447370570379-ql2jq43kjnra7j9vbuhvjfmu3k0pukqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
