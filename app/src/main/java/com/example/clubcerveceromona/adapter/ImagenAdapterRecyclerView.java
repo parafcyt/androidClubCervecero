@@ -1,6 +1,7 @@
-package com.example.clubcerveceromona.view.adapter;
+package com.example.clubcerveceromona.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,12 +9,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.clubcerveceromona.R;
-import com.example.clubcerveceromona.view.model.DatosxImagen;
+import com.example.clubcerveceromona.model.DatosxImagen;
+import com.example.clubcerveceromona.view.ImagenDetalleActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -52,6 +53,16 @@ public class ImagenAdapterRecyclerView extends RecyclerView.Adapter<ImagenAdapte
 
         //imagen con picasso
         Picasso.with(activity).load(datosxImagen.getImagen()).error(R.drawable.ic_casita).into(holder.imagenCard);
+
+        //pongo el listener del cardview ImagenDetalleActivity
+        holder.imagenCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity, ImagenDetalleActivity.class);
+                activity.startActivity(intent);
+            }
+        });
+
 
     }
 

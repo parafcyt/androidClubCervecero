@@ -1,4 +1,4 @@
-package com.example.clubcerveceromona.view.model;
+package com.example.clubcerveceromona.model;
 
 public class DatosxImagen {
     //atributos

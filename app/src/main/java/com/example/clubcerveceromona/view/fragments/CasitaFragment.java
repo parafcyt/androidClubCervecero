@@ -15,8 +15,8 @@ import android.view.ViewGroup;
 import android.widget.Toolbar;
 
 import com.example.clubcerveceromona.R;
-import com.example.clubcerveceromona.view.adapter.ImagenAdapterRecyclerView;
-import com.example.clubcerveceromona.view.model.DatosxImagen;
+import com.example.clubcerveceromona.adapter.ImagenAdapterRecyclerView;
+import com.example.clubcerveceromona.model.DatosxImagen;
 
 import java.util.ArrayList;
 
