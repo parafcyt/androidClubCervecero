@@ -31,6 +31,7 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textoInputCorreo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/crear_correo"
@@ -45,6 +46,7 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textoInputNombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/crear_nombre"
@@ -59,24 +61,12 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/crear_usuario"
-                    android:imeOptions="actionNext"
-                    android:singleLine="true"
-                    android:textSize="25sp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-
-                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textoInputContrasenia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/crear_contrasenia"
                     android:imeOptions="actionNext"
+                    android:inputType="textPassword"
                     android:singleLine="true"
                     android:textSize="25sp" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -87,17 +77,19 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputContraseniaConfirmar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/crear_confircontrasenia"
                     android:imeOptions="actionDone"
+                    android:inputType="textPassword"
                     android:singleLine="true"
                     android:textSize="25sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/botonCrearCuenta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"

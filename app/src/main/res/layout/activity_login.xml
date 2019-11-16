@@ -28,9 +28,10 @@
             android:textColorHint="@color/colorTextoBlanco">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputLogCorreo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/login_usuario"
+                android:hint="Correo"
                 android:imeOptions="actionNext"
                 android:singleLine="true"
                 android:textColor="@color/colorTextoBlanco"
@@ -44,6 +45,7 @@
             android:textColorHint="@color/colorTextoBlanco">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputLogContrasenia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/login_contrasenia"
@@ -55,7 +57,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/botonIniciar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marginTopBoton"

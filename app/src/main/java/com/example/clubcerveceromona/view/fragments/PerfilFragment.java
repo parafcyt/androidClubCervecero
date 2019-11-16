@@ -1,8 +1,13 @@
 package com.example.clubcerveceromona.view.fragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,17 +15,33 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.example.clubcerveceromona.LoginActivity;
 import com.example.clubcerveceromona.R;
 import com.example.clubcerveceromona.adapter.ImagenAdapterRecyclerView;
 import com.example.clubcerveceromona.model.DatosxImagen;
+import com.example.clubcerveceromona.view.ContainerActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PerfilFragment extends Fragment {
+public class PerfilFragment extends Fragment implements View.OnClickListener {
+
+    CircleImageView circle;
+    Toolbar toolbar;
+    ImageView cerrarSesion;
+
+    private FirebaseAuth mAuth;
+
 
 
     public PerfilFragment() {
@@ -28,10 +49,19 @@ public class PerfilFragment extends Fragment {
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         View v = inflater.inflate(R.layout.fragment_perfil, container, false);
+
+        circle = v.findViewById(R.id.fotoPerfilCirculo);
+        toolbar = v.findViewById(R.id.toolbarraPerfil);
+        cerrarSesion = v.findViewById(R.id.cerrarSesion);
+
+        mAuth = FirebaseAuth.getInstance();
+
+        cerrarSesion.setOnClickListener(this);
 
         RecyclerView  perfilRecycler = v.findViewById(R.id.fotoPerfilRecycled);
 
@@ -45,6 +75,19 @@ public class PerfilFragment extends Fragment {
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         perfilRecycler.setLayoutManager(linearLayoutManager);
+
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            // Name, email address, and profile photo Url
+            String name = user.getDisplayName();
+            toolbar.setTitle(name);
+            Uri photoUrl = user.getPhotoUrl();
+            Picasso.with(v.getContext()).load(photoUrl)
+                    .placeholder(R.drawable.ic_perfil).error(R.drawable.ic_perfil).into(circle);
+
+        }
+
 
 
         return v;
@@ -77,4 +120,12 @@ public class PerfilFragment extends Fragment {
 
     }
 
+    @Override
+    public void onClick(View view) {
+        mAuth.signOut();
+        Toast.makeText(PerfilFragment.super.getContext(),"Sesión finalizada",Toast.LENGTH_LONG).show();
+        Intent intent= new Intent(PerfilFragment.super.getContext(), LoginActivity.class);
+        startActivity(intent);
+
+    }
 }
