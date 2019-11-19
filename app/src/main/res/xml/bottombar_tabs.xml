@@ -3,18 +3,21 @@
     <tab
         id="@+id/tab_casita"
         icon="@drawable/ic_casita"
-        title="@string/tab_casita"
-        barColorWhenSelected="@color/colorTextoBlanco"/>
+
+        barColorWhenSelected="#ffffff"
+
+        />
     <tab
         id="@+id/tab_buscar"
         icon="@drawable/ic_buscar"
-        title="@string/tab_buscar"
-        barColorWhenSelected="@color/colorTextoBlanco"/>
+
+        barColorWhenSelected="#ffffff"/>
 
     <tab
         id="@+id/tab_perfil"
         icon="@drawable/ic_perfil"
-        title="@string/tab_perfil"
-        barColorWhenSelected="@color/colorTextoBlanco"/>
+        barColorWhenSelected="#ffffff"/>
 
 </tabs>
+
+<!--    title="Inicio" title="@string/tab_buscar" title="@string/tab_perfil"-->

@@ -5,12 +5,20 @@
     android:id="@+id/bottom_bar"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="60dp"
+    android:layout_height="50dp"
     android:layout_alignParentBottom="true"
     android:layout_gravity="bottom"
     app:bb_inActiveTabColor="@android:color/darker_gray"
-    app:bb_activeTabColor="@color/colorPrimaryDark"
+    app:bb_activeTabColor="@color/colorBotonIniciar"
     app:bb_tabXmlResource="@xml/bottombar_tabs"
-    app:bb_behavior="iconsOnly">
+    app:bb_behavior="iconsOnly"
+    android:background="@color/colorTransparente"
+
+    >
 
 </com.roughike.bottombar.BottomBar>
+
+
+<!--app:bb_behavior="iconsOnly" app:bb_badgesHideWhenActive="true"  app:bb_showShadow="true"
+android:background="@color/colorNegro"
+app:bb_inActiveTabColor="#ad1a2c"-->

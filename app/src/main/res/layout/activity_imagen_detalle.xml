@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondobnviewgroup"
     tools:context=".view.ImagenDetalleActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -27,18 +28,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:background="@drawable/sietecolinas"
+                android:background="@color/colorNegro"
                 app:layout_collapseMode="parallax"/>
 
             <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+                android:id="@+id/toolbarDetalle"
                 app:title="7 COLINAS"
                 app:titleTextColor="@color/colorTextoBlanco"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:popupTheme="@style/Theme.AppCompat.Light"
                 app:layout_collapseMode="pin"
-                app:navigationIcon="?attr/homeAsUpIndicator"/>
+                android:navigationIcon="?attr/homeAsUpIndicator"
+                />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
@@ -63,7 +65,7 @@
                 android:paddingTop="15sp"
                 android:paddingLeft="15sp"
                 android:paddingRight="15sp"
-                android:textColor="@color/colorNegro"/>
+                android:textColor="@color/colorTextoBlanco"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -74,21 +76,23 @@
                 android:paddingBottom="20sp">
 
                 <TextView
+                    android:id="@+id/cantlikes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10 "
-                    android:textColor="@color/colorNegro"
+                    android:textColor="@color/colorTextoBlanco"
                     android:textSize="15sp"/>
 
                 <TextView
+                    android:id="@+id/megusta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Me gusta"
-                    android:textColor="@color/colorNegro"
+                    android:textColor="@color/colorTextoBlanco"
                     android:textSize="15sp"/>
 
             </LinearLayout>
-            
+
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
@@ -98,8 +102,8 @@
                 android:id="@+id/nombreCerveza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cerveza Negra "
-                android:textColor="@color/colorNegro"
+                android:text="Nosotros "
+                android:textColor="@color/colorTextoBlanco"
                 android:textSize="15sp"
                 android:paddingLeft="15sp"
                 android:paddingRight="15sp"
@@ -112,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:padding="15dp"
                 android:text="@string/lorem"
-                android:textColor="@color/colorNegro"
+                android:textColor="@color/colorTextoBlanco"
                 android:textSize="15sp" />
 
         </LinearLayout>

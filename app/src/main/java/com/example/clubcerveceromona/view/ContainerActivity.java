@@ -21,6 +21,8 @@ public class ContainerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_container);
         BottomBar bottomBar= findViewById(R.id.bottom_bar);
 
+
+
         //instancio casitafragment y lo agrego al frame x defecto
         CasitaFragment casitaFragment = new CasitaFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.container, casitaFragment).commit();

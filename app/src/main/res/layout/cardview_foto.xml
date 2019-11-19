@@ -4,8 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    app:cardCornerRadius="6dp"
-    android:layout_marginBottom="30sp">
+    android:layout_marginTop="15sp">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -15,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imagen"
-            android:background="@drawable/sietecolinas"
+            android:background="@color/colorNegro"
             android:scaleType="centerCrop"
             />
 
@@ -68,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:text="Happy Hour 21 a 23 hs."
                 android:textColor="@color/colorTextoBlanco"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 />
 
             <LinearLayout
@@ -78,10 +77,12 @@
                 android:layout_marginTop="5dp">
 
                 <CheckBox
+                    android:id="@+id/corazon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/checkbox_favorito_selector"
                     android:layout_marginRight="8dp"
+                    android:checked="true"
                     />
 
                 <ImageView
@@ -92,6 +93,7 @@
                     />
 
                 <ImageView
+                    android:id="@+id/globito"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/ic_place"
@@ -100,15 +102,37 @@
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/cantidadLikes"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="10 me gusta"
-                android:textSize="12sp"
-                android:textColor="@color/colorTextoBlanco">
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
 
-            </TextView>
+                <TextView
+                    android:id="@+id/cantidadLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTextoBlanco">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/meGusta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="me gusta"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTextoBlanco"
+                    android:paddingLeft="5sp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
 
 
 

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:map="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/map"-->
+<!--    android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".view.MapsActivity" />-->
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MapsActivity">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:paddingBottom="10dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:background="#BF242323"
+                >
+
+                    <TextView
+                        android:id="@+id/nombreCerveceria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7 COLINAS"
+                        android:textColor="@color/colorTextoBlanco"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:paddingTop="20dp"
+                        android:layout_weight="1"
+                        />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_business"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/direccion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estrada 838"
+                        android:textColor="@color/colorTextoBlanco"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_call"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/telefono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03442-432811"
+                        android:textColor="@color/colorTextoBlanco"
+                        android:textSize="18sp"
+                        android:gravity="left"
+
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/horario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Martes a Domingo de 20 a 2 hs."
+                        android:textColor="@color/colorTextoBlanco"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:paddingTop="8dp"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/friendly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gay Friendly"
+                        android:textColor="@color/colorTextoBlanco"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:paddingTop="8dp"
+                        android:layout_weight="1"
+                        android:paddingBottom="20dp"
+                        />
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

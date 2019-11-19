@@ -5,13 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.ContainerActivity">
+    tools:context=".view.ContainerActivity"
+    android:background="@drawable/fondobnviewgroup">
+
+<!--    <include layout="@layout/activity_maps"/>-->
 
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="60dp"
+        android:paddingBottom="50dp"
         >
 
     </FrameLayout>

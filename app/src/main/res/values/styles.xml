@@ -29,11 +29,18 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <item name="colorControlNormal">@color/colorNegro</item>
-        <item name="colorControlActivated">@color/colorNegro</item>
+        <item name="colorControlNormal">@color/colorTextoBlanco</item>
+        <item name="colorControlActivated">@color/colorTextoBlanco</item>
         <item name="colorButtonNormal">@color/colorBotonIniciar</item>
         <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorTextoBlanco</item>
 
     </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+
 
 </resources>

@@ -5,11 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.CreateAccountActivity">
+    tools:context=".view.CreateAccountActivity"
+    android:background="@drawable/fonocrearcuentabn">
 
-    <include layout="@layout/barradeaccion">
-
-    </include>
+    <include layout="@layout/barradeaccion"></include>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,11 +22,15 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="@dimen/paddingLinearLayout"
-            android:theme="@style/AppCrearCuenta">
+            android:theme="@style/AppCrearCuenta"
+            >
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColorHint="@color/colorTextoBlanco"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -37,12 +40,15 @@
                     android:hint="@string/crear_correo"
                     android:imeOptions="actionNext"
                     android:singleLine="true"
-                    android:textSize="25sp" />
+                    android:textSize="20sp"
+                    android:textColor="@color/colorTextoBlanco"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColorHint="@color/colorTextoBlanco"
+                android:paddingBottom="20dp"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -52,12 +58,15 @@
                     android:hint="@string/crear_nombre"
                     android:imeOptions="actionNext"
                     android:singleLine="true"
-                    android:textSize="25sp" />
+                    android:textSize="20sp"
+                    android:textColor="@color/colorTextoBlanco"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColorHint="@color/colorTextoBlanco"
+                android:paddingBottom="20dp"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -68,12 +77,15 @@
                     android:imeOptions="actionNext"
                     android:inputType="textPassword"
                     android:singleLine="true"
-                    android:textSize="25sp" />
+                    android:textSize="20sp"
+                    android:textColor="@color/colorTextoBlanco"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColorHint="@color/colorTextoBlanco"
+                android:paddingBottom="20dp"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -84,7 +96,9 @@
                     android:imeOptions="actionDone"
                     android:inputType="textPassword"
                     android:singleLine="true"
-                    android:textSize="25sp" />
+                    android:textColor="@color/colorTextoBlanco"
+                    android:textSize="20sp"
+                    />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,9 +106,9 @@
                 android:id="@+id/botonCrearCuenta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:height="60dp"
+                android:height="55dp"
                 android:text="@string/login_iniciar"
                 android:textSize="20sp" />
 

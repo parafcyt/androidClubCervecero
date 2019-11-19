@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/lagashbeer"
+    android:background="@drawable/fonodinicialbn"
     tools:context=".LoginActivity"
 
     >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="@dimen/paddingLinearLayout"
 
@@ -22,10 +22,22 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/brewerslogo"
+            android:scaleType="centerCrop">
+
+        </ImageView>
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/colorTextoBlanco">
+            android:textColorHint="@color/colorTextoBlanco"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputLogCorreo"
@@ -35,13 +47,13 @@
                 android:imeOptions="actionNext"
                 android:singleLine="true"
                 android:textColor="@color/colorTextoBlanco"
-                android:textSize="@dimen/tamanioInputPpalTexto" />
+                android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/tamanioSecundario"
+            android:paddingTop="18dp"
             android:textColorHint="@color/colorTextoBlanco">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -53,24 +65,24 @@
                 android:inputType="textPassword"
                 android:singleLine="true"
                 android:textColor="@color/colorTextoBlanco"
-                android:textSize="@dimen/tamanioInputPpalTexto" />
+                android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/botonIniciar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginTopBoton"
-            android:layout_marginBottom="@dimen/tamanioSecundario"
-            android:height="60dp"
+            android:layout_marginTop="50dp"
+            android:height="55dp"
             android:text="@string/login_iniciar"
-            android:textSize="@dimen/tamanioSecundario" />
+            android:textSize="17sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:layout_marginTop="20dp">
 
             <TextView
                 android:id="@+id/textView2"
@@ -78,24 +90,24 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8sp"
                 android:layout_marginRight="8sp"
-                android:gravity="end"
                 android:layout_weight="1"
+                android:gravity="end"
                 android:text="@string/notienecuenta"
                 android:textAlignment="textEnd"
-                android:textSize="@dimen/tamanioSecundario"/>
+                android:textSize="17sp" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="onCrearCuenta"
                 android:text="@string/linkeablecuenta"
-                android:textSize="@dimen/tamanioSecundario"
-                android:textStyle="bold"
-                android:onClick="onCrearCuenta"/>
+                android:textSize="17sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
